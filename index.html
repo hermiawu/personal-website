@@ -1,13 +1,18 @@
 <! DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="images/favicon.ico">
         <title>HAO WU | Designer &amp; Maker</title>
         
          <!-- Noramlize.css -->
-        <link rel="stylesheet" type="text/css" href="normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
         
         <!-- Custom Styles -->
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        
+        <!-- font icons -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.0/css/all.css" crossorigin="anonymous">
     
         <!-- [if IE]>
         <script src="http://html5shim.googlecode.come/svn/html5.js"></script>
@@ -26,39 +31,105 @@
                 <nav>
                     <ul id="menu">
                         <li><a href="">about</a></li>
-                        <li><a href="">portfolio</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="#">portfolio</a>
+                                <ul class="dropdown-content">
+                                    <li><a href="architecture.html">Architecture</a></li>
+                                    <li><a href="uiux.html">UI/UX</a></li>
+                                    <li><a href="">Design Life</a></li> 
+                                </ul><!-- .dropdownContent -->
+                            </div> <!-- .dropdown -->
+                        </li>
+                        
                         <li><a href="">contact</a></li>
                     </ul>
 
                     <ul id="social">
-                        <li><a href="" id="facebook">
-                            <img src="images/facebook.png" alt="Hao's Facebook link" height="29px" width="13px"></a></li>
-                        <li><a href="" id="ins">
-                            <img src="images/ins_logo.png" alt="Hao's Instagram link" height="28px" width="27px"></a></li>
-                        <li><a href="" id="linkedin">
-                            <img src="images/linkedin_logo.png" alt="Hao's Linkedin Link" height="28px" width="27px"></a></li>
+                        <li><a href="">
+                            <i class="fab fa-facebook-f" id="facebook"></i></a></li>
+                        <li><a href="">
+                            <i class="fab fa-instagram" id="instagram"></i></a></li>
+                        <li><a href="">
+                            <i class="fab fa-linkedin-in" id="linkedin"></i></a></li>
                     </ul>
                 </nav>
             </div><!-- #headerCon -->
         </header>
         
-        <div id="container" class="clearfix">
+        <div id="container1" class="clearfix">
             <div id="left_arch">
-                <hgroup>
-                    <h2 class="home">ARCH</h2>
-                    <h4 class="home">&#45;itec</h4>
-                    <h4 class="home">&#45;ture</h4>
-                </hgroup>
+                <a href="architecture.html" class="headLink">
+                    <hgroup>
+                        <h2 class="home">ARCH</h2>
+                        <h4 class="home">&#45;itec</h4>
+                        <h4 class="home">&#45;ture</h4>
+                    </hgroup>
+                </a>
             </div>
+            
             <div id="right_UIUX">
-                <hgroup>
-                    <h3 id="ui">UI/</h3>
-                    <h3 id="ux">UX</h3>
-                </hgroup>
+                <a href="uiux.html" class="headLink">
+                    <hgroup>
+                        <h3 id="ui">UI/</h3>
+                        <h3 id="ux">UX</h3>
+                    </hgroup>
+                </a>
             </div>
             
             <div id="design">
-                <a id="designbutton" href="">D e s i g n</a>
+                <a id="designbutton" href="">Design</a>
+            </div>
+            
+            <!-- the strokes -->
+            <div id="stroke1">
+                <p>Majored in Architectural Deisgn ...</p>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 161 89" enable-background="new 0 0 161 89" xml:space="preserve">
+                    <path class="path1" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M1,1 c10.17,13.24,22.88,25.59,37.83,33.33c2.61,1.35,6.25,3.04,10.13,4.24"/>
+                    <path class="path1" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M48.97,38.58
+                        c5.82,1.81,12.16,2.54,16.26-0.58c8.13-6.19,6.54-17.41-3.56-19.83c-6.79-1.63-9.73,5.99-11.61,11.33
+                        C48.86,32.9,48.56,35.9,48.97,38.58z"/>
+                    <path class="path1" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M48.97,38.58 c2.09,13.73,22.78,18.63,35.7,21.92c22.08,5.63,46.29,13.62,69.33,8.5"/>
+                    <path class="path1" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M136.18,56.73 c2.53,3.54,6.04,6.59,10.28,7.91c2,0.62,3.94,1.72,6.09,1.77c1.56,0.03,3.05,0.61,4.64,0.7c0.34,0.02,2.03-0.01,1.89,0.07
+                    c-0.49,0.24-1.03,0.32-1.55,0.54c-3.18,1.36-5.64,4.48-8.5,6.39c-2.61,1.74-5.11,3.39-7.41,5.53c-1.82,1.7-3.86,3.22-5.81,4.77
+                    c-0.63,0.5-2.23,1.97-2.23,2.78"/>
+                </svg>
+            </div>
+            
+            <div id="stroke2">
+                <p>Interested in UI/UX design...</p>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 167 95" enable-background="new 0 0 167 95" xml:space="preserve">
+                    <path class="path2" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M166,1
+                        c0,0-1.38,1.46-4.69,2.1c-3.32,0.64-14.62,2.31-24.38,4.7s-14.94,3.36-19.64,5.19c-4.7,1.84-10.96,4.71-14.17,6.77
+                        C99.9,21.83,89.29,29.9,86.38,32.59c-2.6,2.41-6.6,6.25-8.09,7.94"/>
+                    <path class="path2" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M78.29,40.53
+                        c-0.18,0.2-0.32,0.37-0.42,0.5c-0.95,1.26-2.97,4.18-3.88,6c-0.91,1.82-1.75,4.13-0.98,6.15c0.77,2.02,3.53,3.82,5.4,3.78
+                        c1.87-0.03,6.62-0.71,8.94-1.63s5.16-2.81,5.62-3.88c0.46-1.07,1.18-3.19,0.44-5.49s-2.2-7.29-3.75-8.32
+                        c-1.54-1.02-4.01,0.08-5.48,0.67c-0.84,0.34-3.41,1.3-6.31,2.37"/>
+                    <path class="path2" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M77.86,40.68
+                        c-2.18,0.8-4.54,1.65-6.51,2.34c-4.59,1.6-21.47,7.62-27.28,11.23c-5.81,3.62-14.23,9.5-18.67,14.08s-8.03,9-9.05,11.18
+                        c-1.02,2.17-2.12,4.75-2.33,6.68s-0.34,6.93-0.34,6.93"/>
+                    <path class="path2" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M2,67.59 c0,0,3.77,3.52,5.65,7.8c1.87,4.29,3.94,13.69,4.67,15.93c0.73,2.24,0.73,2.24,0.73,2.24l0,0c0,0,7.93-7.85,11.89-10.65
+                    s7.54-4.71,9.41-5.29c1.87-0.58,5.04-1.81,8.1-1.61"/>
+                </svg>
+            </div>
+            
+            <div id="stroke3">
+                <p>Design life of 'A' Human...</p>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 209 51" enable-background="new 0 0 209 51" xml:space="preserve">
+                    <path class="path3" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M207.2,1.21
+                        c0,0-0.91,2.53-2.76,3.62S196.3,8.51,193.19,10s-11.26,5.88-17.5,8.52s-27.51,11.02-37.6,13.92c-10.09,2.91-22.94,6.03-28.77,6.61
+                        c-5.84,0.58-18.31,1.16-22.59,0.47c0,0-1.06-0.08-2.5-0.29"/>
+                    <path class="path3" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M84.22,39.23
+                        c-1.77-0.27-4.13-0.75-5.84-1.55c-3.11-1.47-6.57-4.04-7.25-5.69s-0.98-4.5-0.44-5.63c0.54-1.13,3.18-4.51,5.07-6.48
+                        s4.37-4.26,5.82-5.85s5.17-3.02,6.73-3.01c1.56,0.01,3.18-0.17,5.59,0.76s5.45,2.19,7.17,3.8c1.73,1.61,4.14,3.91,4.06,5.86
+                        s-0.32,4.4-2.4,6.6s-3.43,3.78-6.57,5.36c-3.14,1.58-6.23,3.21-11.25,4.41c-1.4,0.33-2.52,0.62-3.53,0.87"/>
+                    <path class="path3" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M81.37,38.68
+                        c-2.61,0.65-4.52,1.08-8.85,1.58c-6.01,0.69-10.01,1.25-16.52,1.31s-16.15-0.13-20.46-0.34c-4.3-0.21-9.84-0.53-14.37-0.73
+                        S6.48,39.71,2.06,40.65"/>
+                    <path class="path3" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M28.94,20.67
+                        c0,0-2.18,2.15-5.07,4.83s-5,4.97-6.93,6.63c-1.94,1.66-2.77,2.18-3.63,2.94s-2.01,2.16-5.18,3.57s-6.73,2.04-6.73,2.04 s2.7,0.59,6.15,1.58c3.45,0.98,7.54,1.3,10.09,2.18s4.48,1.68,6.03,2.31c1.55,0.63,4.39,1.53,5.73,2.13c1.34,0.6,1.67,0.6,1.67,0.6"/>
+                </svg>
             </div>
         </div> <!-- #container -->
         
@@ -67,42 +138,84 @@
                 <div class="headerLine">
                     <p>Recent Explorations</p>
                 </div>
-                <section class="recentPro" id="box1">
-                    <figure><img src="images/recent_flowingMarket.jpg" alt="Model Picture of Flowing Market Hall">
-                        <figcaption>FLOWING MARKET HALL <br>
-                            Architecture Design  
-                        </figcaption>
-                    </figure>
-                </section>
+                
+                <div class="clearfix" id="container3">
+                    <a href="" class="recentPro" id="box1">
+                        <figure class='clearfix'><img src="images/recent_flowingMarket.jpg" alt="Model Picture of Flowing Market Hall">
+                            <figcaption class="clearfix">
+                                <ul>
+                                    <li class="figCharacters">
+                                    FLOWING MARKET HALL <br>
+                                    Architecture Design
+                                    </li>
+                                    <li class="rightArrow"><i class="fas fa-arrow-right"></i></li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                    </a>
 
-                <section class="recentPro" id="box2">
-                    <figure><img src="images/recent_CAFS.jpg" alt="Model Picture of CAFS">
-                        <figcaption>CAFS <br>
-                            Architecture Design  
-                        </figcaption>
-                    </figure>
-                </section>
+                    <a href="" class="recentPro" id="box2">
+                        <figure class="clearfix"><img src="images/recent_CAFS.jpg" alt="Model Picture of CAFS">
+                            <figcaption class="clearfix">
+                                <ul>
+                                    <li class="figCharacters">CAFS <br>
+                                    Architecture Design</li>
+                                    <li class="rightArrow"><i class="fas fa-arrow-right"></i><li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                    </a>
 
-                <section class="recentPro" id="box3">
-                    <figure><img src="" alt="Sharing Life">
-                        <figcaption>SHARING LIFE<br>
-                            UI/UX Design 
-                        </figcaption>
-                    </figure>
-                </section>
+                    <a href="" class="recentPro" id="box3">
+                        <figure><img src="images/recent_CAFS.jpg" alt="Sharing Life">
+                            <figcaption class="clearfix">
+                                <ul>
+                                    <li class="figCharacters">SHARING LIFE<br>
+                                    UI/UX Design</li>
+                                     <li class="rightArrow"><i class="fas fa-arrow-right"></i></li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
             </div><!-- #container2 -->
         </section><!-- #recent -->
     
-        <footer id="footer" class="clearfix">
+        <footer class="clearfix">
             <hr class="footerline">
-            <div id="footerL">
-                &copy;2020 &#124; Hao Wu
-            </div>
-            
-            <div id="footerR">
-                <img src="images/thumb_up_alt_24px_rounded.png" alt="like"><span id="likes">101 Likes</span>
+            <div id="footerBlock" class="clearfix">
+                <div id="footerL">
+                    &copy;2020 &#124; Hao Wu
+                </div>
+
+                <div id="footerR">
+                    <div class="likeAnm">
+                        <i class="fas fa-heart"></i><span>+1</span>
+                    </div>
+                    <span class="likeBtn"><i class="fas fa-thumbs-up"></i></span>
+                    <span id="likesNum">101</span><span> Likes</span>
+                </div>
             </div>
         </footer>
+        
+        
+        <!-- jQuery -->
+        <!-- Load the CDN first -->
+        <script src="http://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+        
+        <!-- if the CDN fails to load, serve up to the local version -->
+        <script>window.jQuery || document.write('<script src="js/jquery-3.5.0.js"> <\/script>');</script>
+        
+        <!-- jQuery UI -->
+        <script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+        
+      
+        <!-- DrawSVG -->
+        <script src="js/gsap-2.1.2/greensock-js/src/minified/TweenMax.min.js"></script>
+        <script src="js/gsap-2.1.2/greensock-js/src/minified/plugins/DrawSVGPlugin.min.js"></script>
+        
+        <script src="js/script.js"></script>
+
         
     </body> 
     
